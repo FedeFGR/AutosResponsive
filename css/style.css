@@ -55,6 +55,10 @@ a.active,a:hover{
   display: none;
 }
 @media (max-width: 952px){
+  .Catalogo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -63,8 +67,11 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
+@media (max-width: 600px){
   .checkbtn{
+    display: block;
+  }
+  .Catalogo{
     display: block;
   }
   ul{
@@ -92,13 +99,8 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
-}
-main{
-    background-image: url("./img/FondoMain.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 100%; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
+  .Catalogo{
+    display: block;
+    
+  }
 }
