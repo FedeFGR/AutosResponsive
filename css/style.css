@@ -54,11 +54,8 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 952px){
-  .Catalogo{
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
+/*@media (max-width: 952px){
+  
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -66,14 +63,12 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
-}
+}*/
 @media (max-width: 600px){
   .checkbtn{
     display: block;
   }
-  .Catalogo{
-    display: block;
-  }
+  
   ul{
     position: fixed;
     width: 100%;
@@ -99,8 +94,9 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
-  .Catalogo{
-    display: block;
-    
-  }
+}
+.Catalogo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
