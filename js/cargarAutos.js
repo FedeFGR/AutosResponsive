@@ -6,13 +6,14 @@ fetch("../BD/Autos.json")
 .then(data => console.log(data));
 */
 
-const CatalogoContainer=document.getElementById("Catalogo");
+const CatalogoContainer=document.getElementById("CatalogoContainer");
 
 fetch("../BD/Autos.json")
 .then(response => {return response.json();})
 .then(data =>{
    console.log(data)
-   for( const auto of data.Autos){
+   CatalogoContainer.innerHTML=`<br>`
+      for( const auto of data.Autos){
       CatalogoContainer.innerHTML+=`
       <div class="card">
          <img class="imgcard" src="${auto.URL}">
