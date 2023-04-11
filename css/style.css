@@ -76,6 +76,58 @@ a.active,a:hover{
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+/*estilo formulario registro/subcripcion*/
+.formSub{
+  width: 400px;
+  background-color: black;
+  padding: 25px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 10px 10px 10px rgb(50,50,50);
+}
+.formSub input,select{
+  width: 100%;
+  background-color: rgb(175, 210, 255);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.formSub h3{
+  text-align: center;
+}
+.formSub button{
+  width: 150px;
+  background-color: aquamarine;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 125px;
+}
+/*estilo formulario filtros*/
+.formFiltro{
+  width: 450px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  
+  border-radius: 3px;
+  color: white;
+  box-shadow: 10px 10px 10px rgb(50,50,50);
+}
+.formFiltro input,select{
+  width: 25%;
+  background-color: rgb(200, 200, 200);
+  padding: 5px;
+}
+.formFiltro button{
+  width: 70px;
+  background-color: rgb(200, 200, 200);
+  padding: 5px;
+}
+
 @media (max-width: 800px){
   /*nav{
     display: block;
